@@ -1,0 +1,30 @@
+server:
+  port: 8080
+
+
+spring:
+  # 数据库配置
+  datasource:
+    druid: # Alibaba druid 连接池; 监控系统: http://localhost:8080/druid/index.html
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/demo?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&allowMultiQueries=true&useSSL=false
+      username: root
+      password: 123456
+
+#mybatis配置
+mybatis:
+  type-aliases-package: com.example.demo.pojo
+  mapper-locations: classpath:mapper/*.xml
+
+#日志配置
+#logback 配置
+logging:
+  level:
+    root: info
+    org.springframework.boot.autoconfigure: error
+    org.springframework.web: debug
+    com.example.demo: debug
+  file:
+    path: logs
+debug: true
+

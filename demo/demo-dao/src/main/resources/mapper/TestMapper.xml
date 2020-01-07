@@ -1,0 +1,17 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.dao.TestDao">
+
+    <insert id="save" parameterType="testDO" useGeneratedKeys="true" keyProperty="id">
+        insert into t_test (`name`, age) value (#{name}, #{age})
+    </insert>
+
+    <select id="get" parameterType="long" resultType="testDO">
+        select
+            id,
+            `name`,
+            age
+        from t_test
+        where id = #{id}
+    </select>
+
+</mapper>
