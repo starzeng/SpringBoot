@@ -18,6 +18,7 @@ target/
 *.iws
 *.iml
 *.ipr
+**/logs/**
 
 ### NetBeans ###
 /nbproject/private/
@@ -29,8 +30,3 @@ build/
 
 ### VS Code ###
 .vscode/
-demo-common/src/
-demo-controller/src/test/
-demo-dao/src/test/
-demo-pojo/src/main/resources/
-demo-pojo/src/test/
