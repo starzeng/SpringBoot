@@ -23,7 +23,7 @@
         <mysql.version>8.0.18</mysql.version>
         <pagehelper.version>1.2.5</pagehelper.version>
         <druid.version>1.1.10</druid.version>
-        <fastjson.version>1.2.60</fastjson.version>
+        <fastjson.version>1.2.83</fastjson.version>
         <lombok.version>1.18.10</lombok.version>
         <commons-lang3.version>3.9</commons-lang3.version>
         <guava.version>28.1-jre</guava.version>
